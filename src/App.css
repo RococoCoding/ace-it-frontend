@@ -4,4 +4,6 @@ header {
 h1{
   text-align: center;
   padding: 1% 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
