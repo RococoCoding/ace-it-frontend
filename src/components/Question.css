@@ -1,0 +1,26 @@
+.question-container {
+  margin: 4%;
+}
+h3 {
+  text-align: center;
+}
+img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+.reload {
+  display: inline-block;
+  width: 2%;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.reload:hover {
+  animation: rotate 2s
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
