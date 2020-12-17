@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
 import "./Question.css";
+import Video from "./Video";
 
 function Question() {
   const [question, setQuestion] = useState("");
@@ -19,8 +21,9 @@ function Question() {
   return (
     <div className="question-container">
       <h3>{question}
-        <img onClick={()=>setReload(!reload)}src="assets/refresh.png" className="reload" alt="reload icon" />
+        <img onClick={() => setReload(!reload)} src="assets/refresh.png" className="reload" alt="reload icon" />
       </h3>
+      <Video />
       <img src="assets/Dog-Interviewer.jpg" alt="dog with glasses sitting at a desk in front of a laptop" />
     </div>
   );
