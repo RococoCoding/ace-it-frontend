@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import "./Question.css";
-import Video from "./Video";
+import Video from "./Webcam";
 
 function Question() {
   const [question, setQuestion] = useState("");
