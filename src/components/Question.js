@@ -23,7 +23,7 @@ function Question() {
       <h3>{question}
         <img onClick={() => setReload(!reload)} src="assets/refresh.png" className="reload" alt="reload icon" />
       </h3>
-      <Video />
+      {/* <Video /> */}
       <img src="assets/Dog-Interviewer.jpg" alt="dog with glasses sitting at a desk in front of a laptop" />
     </div>
   );
