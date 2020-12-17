@@ -22,6 +22,9 @@ img {
 .reload:hover {
   animation: rotate 2s
 }
+video {
+  width: 15%;
+}
 
 @keyframes rotate {
   100% {
