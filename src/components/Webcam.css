@@ -33,6 +33,9 @@ video {
 }
 
 @media only screen and (max-width: 1000px) {
+  .video-wrapper {
+    width: 37%;
+  }
   .webm-warning {
     font-size: 0.8rem;
   }
@@ -40,11 +43,11 @@ video {
 
 @media only screen and (max-width: 800px) {
   .video-wrapper {
-    width: 37%;
-    font-size: 0.8rem;
+    width: 70%;
+    font-size: 0.9rem;
   }
   .start-webcam {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .webm-warning {
     font-size: 0.6rem;
