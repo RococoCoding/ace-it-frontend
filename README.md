@@ -1,4 +1,4 @@
-# Project 6 - Ace the Interview 
+# Ace the Interview 
 **Timeline**: Two days  
 **Tech**: React  
 **Description**: App that loads random behavioral interview questions for you to practice with.     
