@@ -10,7 +10,7 @@ function Question(props) {
   const { setReload } = props;
 
   useEffect(() => {
-    axios.get("https://ace-the-interview.herokuapp.com/questions/random")
+    axios.get(`${process.env.REACT_APP_SERVER_URL}/questions/random`)
       .then(res => {
         setQuestion(res.data.questions);
       })
