@@ -1,5 +1,6 @@
 .question-container {
   margin: 4%;
+  width: 70%;
 }
 h3 {
   text-align: center;
@@ -26,5 +27,11 @@ img {
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .question-container {
+    width: 92%;
   }
 }

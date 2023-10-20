@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { ReloadContext } from "../context/context";
 import axios from "axios";
 
 import "./Question.css";
-import Video from "./Webcam";
 
-function Question() {
+function Question(props) {
   const [question, setQuestion] = useState("");
-  const [reload, setReload] = useState(false);
+  const { reload } = useContext(ReloadContext);
+  const { setReload } = props;
 
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_SERVER_URL}/questions/random`)
@@ -20,10 +21,13 @@ function Question() {
 
   return (
     <div className="question-container">
+      {question ? 
       <h3>{question}
         <img onClick={() => setReload(!reload)} src="assets/refresh.png" className="reload" alt="reload icon" />
       </h3>
-      {/* <Video /> */}
+      :
+      <p>Loading question...</p>
+      }
       <img src="assets/Dog-Interviewer.jpg" alt="dog with glasses sitting at a desk in front of a laptop" />
     </div>
   );
